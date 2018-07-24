@@ -1,0 +1,66 @@
+%--------------------------------------------------------------------
+%--------------------------------------------------------------------
+% Formato para los talleres del curso de Métodos Computacionales
+% Universidad de los Andes
+%--------------------------------------------------------------------
+%--------------------------------------------------------------------
+
+\documentclass[11pt,letterpaper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage[absolute]{textpos} % Para poner una imagen en posiciones arbitrarias
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{hyperref}
+%\decimalpoint
+
+\begin{document}
+\begin{center}
+{\Large Métodos Computacionales} \\
+Resultados DanielSabogal -2018\\
+\end{center}
+
+
+\noindent
+\section{Gr\'aficas ejercicio 1}
+Puede verse como la trayectoria de la particula tiene una aceleracion en el eje z nula y por el contrario en el eje x varia como en el eje y.
+\begin{center}
+\includegraphics[width=10cm]{ODE.pdf} 
+\end{center}
+x contra y, aqui puede verse como el campo productro cruz la velocidad genera una trayectoria circular en el plano z=0.
+\begin{center}
+\includegraphics[width=10cm]{ODE1.pdf}
+\end{center}
+x vs z, puede verse como z varia sinusioidalmente respecto a x tal como lo esperado en la teoria.
+\begin{center}
+\includegraphics[width=10cm]{ODE2.pdf}
+\end{center}
+t vs y, y varia respecto al tiempo sinusoidalmente.
+\begin{center}
+\includegraphics[width=10cm]{ODE3.pdf}
+\end{center}
+
+\section{Gr\'aficas ejercicio 2}
+condiciones ininicales de la membrana.
+\begin{center}
+\includegraphics[width=10cm]{PDE.pdf}
+\end{center}
+membrana de extemos fijos en un tiempo final de 1/400 segundos, despues de ese tiempo la simulacion deja de funcionar sin razon alguna :(
+\begin{center}
+\includegraphics[width=10cm]{PDE1.pdf}
+\end{center}
+cortes transversales en la mitad de la membrana cada 50 pasos de tiempo, esto fue debido a que la simulacion solo funciono establemente 150 pasos de tiempo. Puede verse como la onda se propaga en dos dimensiones hacia la derecha.
+\begin{center}
+\includegraphics[width=10cm]{CORTES1.pdf}
+\end{center}
+membrana de extremos abiertos en un tiempo final de 1/400 segundos, al igual que la de extremos fijos, fue inestable despues de 150 iteraciones en el tiempo.
+\begin{center}
+\includegraphics[width=10cm]{PDE2.pdf}
+\end{center}
+puede verse que en los cortes transversales la membrana se propaga de la misma manera, sin embargo aparece un corte pronunciado en los bordes, esto se debe a la condicion de derivada espacial igual a cero, lo que hace que el punto anterior al final sea igual al final.
+\begin{center}
+\includegraphics[width=10cm]{CORTES2.pdf}
+\end{center}
+\end{document}
